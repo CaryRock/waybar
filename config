@@ -1,0 +1,36 @@
+// -*- mode: json -*-
+// follow this example: https://github.com/cjbassi/config/tree/master/.config/waybar
+
+{
+    "layer": "top",
+    "modules-left": [
+        "river/tags"
+    ],
+    "modules-right": [
+        "memory",
+        "cpu",
+        "disk1",
+        "tray",
+        "clock#1"
+    ],
+    
+    "memory": {
+        "interval": 1,
+        "format": "Mem {}%"
+    },
+    "cpu": {
+        "interval": 1,
+        "format": "CPU {usage:2}%"
+    },
+    "disk1": {
+        "interval": 5,
+        "format": "/ {percentage_used:2}%",
+        "path": "/"
+    },
+    "tray": {
+        "icon-size": 20
+    },
+    "clock#1": {
+        "format": "{:%m/%d %H:%M}"
+    }
+}
